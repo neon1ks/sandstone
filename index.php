@@ -61,10 +61,6 @@ if ($this->params->get('googleFont'))
 if ($this->params->get('templateColor'))
 {
 	$doc->addStyleDeclaration("
-	body.site {
-		border-top: 3px solid " . $this->params->get('templateColor') . ";
-		background-color: " . $this->params->get('templateBackgroundColor') . ";
-	}
 	a {
 		color: " . $this->params->get('templateColor') . ";
 	}
