@@ -54,7 +54,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="templateColor" class="" type="color" default="#08C"
+				<field name="templateColor" class="" type="color" default="#93c54b"
 					label="TPL_SANDSTONE_COLOR_LABEL"
 					description="TPL_SANDSTONE_COLOR_DESC" />
 
