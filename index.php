@@ -39,12 +39,13 @@ else
 }
 
 // Add JavaScript Frameworks
-JHtml::_('bootstrap.framework');
 
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/jquery.js');
+$doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
 $doc->addScriptVersion($this->baseurl . '/templates/' . $this->template . '/js/template.js');
 
 // Add Stylesheets
-$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/template.css');
+$doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.css');
 
 // Use of Google Font
 if ($this->params->get('googleFont'))
@@ -87,8 +88,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 	$this->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/user.css');
 }
 
-// Load optional RTL Bootstrap CSS
-JHtml::_('bootstrap.loadCss', false, $this->direction);
 
 // Adjusting content width
 if ($this->countModules('position-7') && $this->countModules('position-8'))
