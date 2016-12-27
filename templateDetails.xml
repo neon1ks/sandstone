@@ -58,7 +58,7 @@
 					label="TPL_SANDSTONE_COLOR_LABEL"
 					description="TPL_SANDSTONE_COLOR_DESC" />
 
-				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+				<field name="templateBackgroundColor" class="" type="color" default="#FFFFFF"
 					label="TPL_SANDSTONE_BACKGROUND_COLOR_LABEL"
 					description="TPL_SANDSTONE_BACKGROUND_COLOR_DESC" />
 
