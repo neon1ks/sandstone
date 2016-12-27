@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>sandstone</name>
+	<version>0.1</version>
+	<creationDate>12/27/2016</creationDate>
+	<author>Maksim Demyanov</author>
+	<authorEmail>neon1ks@mail.ru</authorEmail>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>TPL_SANDSTONE_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_sandstone.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_sandstone.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_sandstone.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_sandstone.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#08C"
+					label="TPL_SANDSTONE_COLOR_LABEL"
+					description="TPL_SANDSTONE_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+					label="TPL_SANDSTONE_BACKGROUND_COLOR_LABEL"
+					description="TPL_SANDSTONE_BACKGROUND_COLOR_DESC" />
+
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_SANDSTONE_LOGO_LABEL"
+					description="TPL_SANDSTONE_LOGO_DESC" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_SANDSTONE_FONT_LABEL"
+					description="TPL_SANDSTONE_FONT_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_SANDSTONE_FONT_NAME_LABEL"
+					description="TPL_SANDSTONE_FONT_NAME_DESC" 
+					showon="googleFont:1" />
+
+				<field name="fluidContainer"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="TPL_SANDSTONE_FLUID_LABEL"
+					description="TPL_SANDSTONE_FLUID_DESC"
+				>
+					<option value="1">TPL_SANDSTONE_FLUID</option>
+					<option value="0">TPL_SANDSTONE_STATIC</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
